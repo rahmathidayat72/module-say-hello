@@ -1,5 +1,7 @@
 package gosayhello
 
+import "fmt"
+
 func SayHello(name string) string {
 	return "Hello" + name + "How are you today?	;)"
 }
@@ -18,4 +20,11 @@ func Age(age int) string {
 	} else {
 		return "Anda di kategorikan Manula..!"
 	}
+
+}
+
+var bulan = [...]string{"januari", "-", "Desember"}
+
+func Bulan() {
+	fmt.Println(bulan)
 }
